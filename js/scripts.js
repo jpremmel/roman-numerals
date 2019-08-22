@@ -7,8 +7,14 @@ $(document).ready(function() {
 });
 //BUSINESS LOGIC
 function convertToRoman(input) {
+  var output = "";
   if (input > 3999 || input < 0) {
     alert("Please enter a number between 0 and 3,999");
+  } else {
+    for(var i=0; i<input; i++){
+      output += "I";
+
+    }
   }
-  return input;
+  return output;
 }
