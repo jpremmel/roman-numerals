@@ -32,22 +32,57 @@ function convertToRoman(input) {
         m += "M";
       }
       console.log(m);
-    } else if (digitArray.length === 3) {
+    }
+
+
+    else if (digitArray.length === 3) {
       for (var n = 0; n < digitArray[0]; n++) {
         c += "C";
       }
-      console.log(c);
-    } else if (digitArray.length === 2) {
+      if (c.length > 3) {
+        d = "D";
+        c = "";
+        for (var n = 0; n < digitArray[0] - 5; n++) {
+          c += "C";
+        }
+        hundreds = d + c;
+      }
+      console.log(hundreds);
+    }
+
+
+    else if (digitArray.length === 2) {
       for (var n = 0; n < digitArray[0]; n++) {
         x += "X";
       }
-      console.log(x);
-    } else if (digitArray.length === 1) {
+      if (x.length > 3) {
+        l = "L";
+        x = "";
+        for (var n = 0; n < digitArray[0] - 5; n++){
+          x += "X";
+        }
+        tens = l + x;
+      }
+      console.log(tens);
+    }
+
+
+    else if (digitArray.length === 1) {
       for (var n = 0; n < digitArray[0]; n++) {
         i += "I";
       }
-      console.log(i);
+      if (i.length > 3) {
+        v = "V";
+        i = "";
+        for (var n = 0; n < digitArray[0] - 5; n++) {
+          i += "I";
+        }
+        ones = v + i;
+        console.log(ones);
+      }
     }
+
+
   }
   output= thousands + hundreds + tens + ones;
   return output;
