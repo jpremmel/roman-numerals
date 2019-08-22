@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#output").text(output);
   });
 });
+
 //BUSINESS LOGIC
 function convertToRoman(input) {
   var d = "";
@@ -33,10 +34,7 @@ function convertToRoman(input) {
       thousands += "M";
     }
     console.log(thousands);
-  }
-
-
-  else if (digitArray.length === 3) {
+  } else if (digitArray.length === 3) {
     for (var n = 0; n < digitArray[0]; n++) {
       c += "C";
     }
@@ -59,10 +57,7 @@ function convertToRoman(input) {
       hundreds = c;
     }
     console.log(hundreds);
-  }
-
-
-  else if (digitArray.length === 2) {
+  } else if (digitArray.length === 2) {
     for (var n = 0; n < digitArray[0]; n++) {
       x += "X";
     }
@@ -85,10 +80,7 @@ function convertToRoman(input) {
       tens = x;
     }
     console.log(tens);
-  }
-
-
-  else if (digitArray.length === 1) {
+  } else if (digitArray.length === 1) {
     for (var n = 0; n < digitArray[0]; n++) {
       i += "I";
     }
