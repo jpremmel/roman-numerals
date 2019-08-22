@@ -6,16 +6,21 @@
 
 ## Specifications & Description
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _For any input other than a number between 0 and 3,999, nothing occurs._
+  * _Example Input: 5,000_
+  * _Example Output: undefined_
+* _For a single-digit numerical input, the corresponding Roman Numerals are added together._
+  * _Example Input: 8_
+  * _Example Output: IIIIIIII_
+* _For a single-digit numerical input where the corresponding Roman Numerals result is more than three consecutive symbols, convert to the symbol of the next highest value._
+  * _Example Input: 4_
+  * _Example Output: V_
+* _After applying the previous rule, then find the difference between the higher value symbol and the original input, and place the value of this difference to the left of the higher value symbol._
+  * _Example Input: 4_
+  * _Example Output: IV_
+* _For a multi-digit numerical input, examine the digit in each place (ones, tens, hundreds, thousands) separately, converting it to Roman Numerals using the above rules._
+  * _Example Input: 99_
+  * _Example Output: XCIX_
 
 ## Setup/Installation Requirements
 
@@ -28,6 +33,6 @@ _JavaScript, jQuery_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*Open-source*
 
 Copyright (c) 2019 **_Lauren Musante, Sofia Giordano, and Jacqueline Remmel_**
