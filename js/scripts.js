@@ -3,10 +3,11 @@ $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#number-input").val());
-    if (input > 3999 || input < 0) {
-      alert("Please enter a number between 0 and 3,999");
+    var output = "";
+    if (input > 3999 || input < 1) {
+      output = "Please enter a number between 0 and 4,000.";
     } else {
-      var output = convertToRoman(input);
+      output = convertToRoman(input);
     }
     $("#output").text(output);
   });

@@ -1,14 +1,14 @@
 # _Roman Numeral Converter_
 
-#### _A webpage to convert decimal numbers to Roman Numerals, 22 Aug 2019_
+#### _A webpage to convert decimal numbers to Roman Numerals, 23 Aug 2019_
 
 #### By _**Lauren Musante, Sofia Giordano, and Jacqueline Remmel**_
 
 ## Specifications & Description
 
-* _For any input other than a number between 0 and 3,999, an error message is displayed._
-  * _Example Input: 5,000_
-  * _Example Output: Please enter a number between 0 and 3,999._
+* _For any input other than a number between 0 and 4,000, an error message is displayed._
+  * _Example Input: 5000_
+  * _Example Output: Please enter a number between 0 and 4,000._
 * _For a single-digit numerical input, the corresponding Roman Numerals are added together._
   * _Example Input: 8_
   * _Example Output: IIIIIIII_
