@@ -31,11 +31,16 @@ function convertToRoman(input) {
   console.log(digitArray);
 
   if (digitArray.length === 4) {      //IF INPUT IS A FOUR-DIGIT NUMBER
+    //PROPERLY CALCULATE THE THOUSANDS PLACE (WHICH IS DIGITARRAY[0])
     for (var n = 0; n < digitArray[0]; n++) {
       thousands += "M";
     }
     console.log(thousands);
+    //PROPERLY CALCULATE THE HUNDREDS PLACE (WHICH IS DIGITARRAY[1])
+    //PROPERLY CALCULATE THE TENS PLACE (WHICH IS DIGITARRAY[2])
+    //PROPERLY CALCULATE THE ONES PLACE (WHICH IS DIGITARRAY[3])
   } else if (digitArray.length === 3) {     //IF INPUT IS A TRIPLE-DIGIT NUMBER
+    //PROPERLY CALCULATE THE HUNDREDS PLACE (WHICH IS DIGITARRAY[0])
     for (var n = 0; n < digitArray[0]; n++) {
       c += "C";
     }
@@ -58,7 +63,10 @@ function convertToRoman(input) {
       hundreds = c;
     }
     console.log(hundreds);
+    //PROPERLY CALCULATE THE TENS PLACE (WHICH IS DIGITARRAY[1])
+    //PROPERLY CALCULATE THE ONES PLACE (WHICH IS DIGITARRAY[2])
   } else if (digitArray.length === 2) {     //IF INPUT IS A DOUBLE-DIGIT NUMBER
+    //PROPERLY CALCULATE THE TENS PLACE (WHICH IS DIGITARRAY[0])
     for (var n = 0; n < digitArray[0]; n++) {
       x += "X";
     }
@@ -81,7 +89,9 @@ function convertToRoman(input) {
       tens = x;
     }
     console.log(tens);
+    //PROPERLY CALCULATE THE ONES PLACE (WHICH IS DIGITARRAY[1])
   } else if (digitArray.length === 1) {     //IF INPUT IS A SINGLE-DIGIT NUMBER
+    //PROPERLY CALCULATE THE ONES PLACE (WHICH IS DIGITARRAY[0])
     for (var n = 0; n < digitArray[0]; n++) {
       i += "I";
     }
