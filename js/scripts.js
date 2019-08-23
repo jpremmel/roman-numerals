@@ -30,12 +30,12 @@ function convertToRoman(input) {
   var digitArray = inputString.split("");
   console.log(digitArray);
 
-  if (digitArray.length === 4) {
+  if (digitArray.length === 4) {      //IF INPUT IS A FOUR-DIGIT NUMBER
     for (var n = 0; n < digitArray[0]; n++) {
       thousands += "M";
     }
     console.log(thousands);
-  } else if (digitArray.length === 3) {
+  } else if (digitArray.length === 3) {     //IF INPUT IS A TRIPLE-DIGIT NUMBER
     for (var n = 0; n < digitArray[0]; n++) {
       c += "C";
     }
@@ -58,7 +58,7 @@ function convertToRoman(input) {
       hundreds = c;
     }
     console.log(hundreds);
-  } else if (digitArray.length === 2) {
+  } else if (digitArray.length === 2) {     //IF INPUT IS A DOUBLE-DIGIT NUMBER
     for (var n = 0; n < digitArray[0]; n++) {
       x += "X";
     }
@@ -81,7 +81,7 @@ function convertToRoman(input) {
       tens = x;
     }
     console.log(tens);
-  } else if (digitArray.length === 1) {
+  } else if (digitArray.length === 1) {     //IF INPUT IS A SINGLE-DIGIT NUMBER
     for (var n = 0; n < digitArray[0]; n++) {
       i += "I";
     }
@@ -108,6 +108,6 @@ function convertToRoman(input) {
     }
   }
 
-  output= thousands + hundreds + tens + ones;
+  output = thousands + hundreds + tens + ones;
   return output;
 }
