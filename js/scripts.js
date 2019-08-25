@@ -19,7 +19,6 @@ function convertToRoman(input) {
   var tens = "";
   var hundreds = "";
   var thousands = "";
-  var output = "";
   var digitArray = input.toString().split("");
   console.log(digitArray);
   if (digitArray.length === 4) {               //If input is a four-digit number...
@@ -37,7 +36,7 @@ function convertToRoman(input) {
   } else if (digitArray.length === 1) {        //If input is a single-digit number...
     ones = calcOnes(digitArray[0]);            //Calculate the ones place (which is digitArray[0])
   }
-  output = thousands + hundreds + tens + ones;
+  var output = thousands + hundreds + tens + ones;
   return output;
 }
 
