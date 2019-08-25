@@ -1,4 +1,4 @@
-//USER INTERFACE
+//FRONT-END
 $(document).ready(function() {
   $("#input").submit(function(event) {
     event.preventDefault();
@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
 });
 
-//BUSINESS LOGIC
+//BACK-END
 function convertToRoman(input) {
   var ones = "";
   var tens = "";

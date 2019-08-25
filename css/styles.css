@@ -1,7 +1,28 @@
-.btn {
-  margin: 10px;
+body {
+  text-align: center;
+  background-color: #ffbf80;
+  color: #800000;
 }
 
 h1 {
-  text-align: center;
+  font-variant: small-caps;
+  margin: 20px;
+}
+
+#number-input {
+  border-color: #800000;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.btn {
+  color: #800000;
+  border-width: medium;
+  border-color: #800000;
+  margin: 10px;
+}
+
+#output {
+  font-size: 28px;
+  font:
 }
